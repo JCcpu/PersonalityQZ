@@ -68,18 +68,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-ZW-Mbb">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="H4b-DJ-Tr8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH1-G8-uyU">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="FRr-eG-TmR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6h-TG-HJW">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="x2Z-Ed-FwP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-wa-Rpp">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionOneButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="RhT-nC-XVC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -89,18 +101,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbs-wa-wqd">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="5wc-uk-v71"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB0-F6-hXf">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="Tyt-Am-9vY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psb-9y-Vb3">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="eo7-uY-a7E"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQW-eN-AIF">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionTwoButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="pV1-gL-gaB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -110,6 +134,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-kE-OX6">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="Gfs-2q-wcx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-Tx-9Hn">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>

@@ -55,6 +55,8 @@ class QuestionViewController: UIViewController {
     ]
     
     var questionIndex = 0
+    
+    var answerChosen: [Answer] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,4 +119,66 @@ class QuestionViewController: UIViewController {
         button12.setTitle(answers[3].text, for: .normal)
     }
     
+    @IBAction func questionOneButtonPressed(_ sender: UIButton) {
+        let currentAnswers = question[questionIndex].answer
+        
+        switch sender {
+        case button1:
+            answerChosen.append(currentAnswers[0])
+        case button2:
+            answerChosen.append(currentAnswers[0])
+        case button3:
+            answerChosen.append(currentAnswers[0])
+        case button4:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+        }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func questionTwoButtonPressed(_ sender: UIButton){
+        let currentAnswers = question[questionIndex].answer
+        
+        switch sender {
+        case button5:
+            answerChosen.append(currentAnswers[0])
+        case button6:
+            answerChosen.append(currentAnswers[0])
+        case button7:
+            answerChosen.append(currentAnswers[0])
+        case button8:
+            answerChosen.append(currentAnswers[0])
+        default:
+            break
+            
+        }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func questionThreeButtonPressed(_ sender: UIButton) {
+    let currentAnswers = question[questionIndex].answer
+    
+    switch sender {
+    case button9:
+        answerChosen.append(currentAnswers[0])
+    case button10:
+        answerChosen.append(currentAnswers[0])
+    case button11:
+        answerChosen.append(currentAnswers[0])
+    case button12:
+        answerChosen.append(currentAnswers[0])
+    default:
+        break
+        
+    }
+    
+    nextQuestion()
+}
+    
+    func nextQuestion() {
+        
+    }
 }
