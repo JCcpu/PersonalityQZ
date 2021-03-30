@@ -141,14 +141,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-Tx-9Hn">
                                         <rect key="frame" x="0.0" y="50" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="mU4-5F-NQt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EF-QM-r3S">
                                         <rect key="frame" x="0.0" y="100" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="UHP-dB-uZg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6w-d4-97r">
                                         <rect key="frame" x="0.0" y="150" width="382" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="questionThreeButtonPressed:" destination="V1F-eD-SAt" eventType="touchUpInside" id="B2P-5w-5RT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -183,12 +192,6 @@
                             <constraint firstItem="LKL-vI-zBQ" firstAttribute="leading" secondItem="GdW-TM-ajE" secondAttribute="leading" constant="20" id="p8e-AQ-pwx"/>
                             <constraint firstItem="GdW-TM-ajE" firstAttribute="bottom" secondItem="LKL-vI-zBQ" secondAttribute="bottom" constant="6" id="q6Y-0S-Lmw"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="cKf-mT-428"/>
-                                <exclude reference="3lw-JR-X2n"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="qQ8-vN-91O"/>
                     <connections>
@@ -240,6 +243,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="YAg-gZ-fDa" firstAttribute="top" secondItem="1Jv-KP-cGr" secondAttribute="top" constant="120" id="IZV-pY-D3S"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JlK-8N-cFY"/>
@@ -252,10 +258,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="hLB-Ao-LSN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Bsu-7Y-yg9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Bsu-7Y-yg9">
+                            <connections>
+                                <segue destination="RWU-9n-85t" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="dEp-4K-rtJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="YAg-gZ-fDa" id="BHY-HH-Rv7"/>
+                        <outlet property="resultDefinitionLabel" destination="fqr-cI-WTf" id="8ab-Yp-Wiu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqj-uc-0Dr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RWU-9n-85t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2218.840579710145" y="103.79464285714285"/>
         </scene>

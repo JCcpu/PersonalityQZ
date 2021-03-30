@@ -187,4 +187,11 @@ class QuestionViewController: UIViewController {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsVieewController = segue.destination as! ResultsViewController
+            resultsVieewController.responses = answerChosen
+        }
+    }
 }
