@@ -40,7 +40,7 @@ class QuestionViewController: UIViewController {
         Answer(text: "I spend the day exploring the outdoors", type: .dog),
         Answer(text: "I spend the days in other ways", type: .bird)
         ]),
-        Question(text: "Would you descibe yourself has", type: .question2, answer: [
+        Question(text: "Would you descibe yourself as?", type: .question2, answer: [
             Answer(text: "Intelligent", type: .rabbit),
             Answer(text: "Playful", type: .dog),
             Answer(text: "Self Right", type: .cat),
